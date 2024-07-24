@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>fast typing game</title>
+  </head>
+  <body>
+    <button class="settings-btn" id="settings-btn">
+      <i class="fas fa-tools fa-2x"></i>
+    </button>
+    <div class="setting hide" id="setting">
+      <form action="" id="form">
+        <label for="difficulty">difficulty</label>
+        <select name="" id="difficulty">
+          <option value="easy">easy</option>
+          <option value="medium">medium</option>
+          <option value="hard">hard</option>
+        </select>
+      </form>
+    </div>
+    <div class="con">
+      <h2>fast typing game</h2>
+      <p>type this word as fast as you can</p>
+      <h1 id="word"></h1>
+      <input
+        type="text"
+        name=""
+        id="user-word"
+        placeholder="please type here"
+        autocomplete="off"
+      />
+      <p class="timer">time remaining <span id="time">10s</span></p>
+      <p class="score-card">score: <span id="score">0</span></p>
+      <div class="game-over-con" id="game-over-con"></div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
